@@ -1,0 +1,45 @@
+{
+  "name": "@kard/dynamo-state",
+  "version": "1.0.1",
+  "description": "AWS DynamoDB state",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx rimraf dist && npx webpack",
+    "publish": "npm publish --access public",
+    "esfix": "eslint ./src/**/*.js --fix --ignore-path .gitignore",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "dist": "dist"
+  },
+  "keywords": [
+    "AWS",
+    "DynamoDB",
+    "State Machine"
+  ],
+  "author": "Dmitry Karmalita",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkarmalita/kard-dynamo-state.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkarmalita/kard-dynamo-state/issues"
+  },
+  "homepage": "https://github.com/dkarmalita/kard-dynamo-state#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.984.0"
+  }
+}

@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+*.bak.*
+*.bak
+bak
+build
+deploy
+dev
+esfix
+run
+scripts
